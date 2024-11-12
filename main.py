@@ -43,8 +43,7 @@ except ValueError:
 ADMINS.append(OWNER)
 
 bot = Client("bot",    
-   bot_token="7251005777:AAHQ-qNJrZ1Wm683pu8-96pm6mqlTaBKxAc
-",    
+   bot_token="7103819451:AAFp02pmf0FQjtcaP1phUTm4YPFGwt0IzwY",    
    api_id= 20346550,    
    api_hash= "bc79c3bea7a626887bdc0871eecf0327"
 )
@@ -81,7 +80,7 @@ async def download_pdf(url, filename):
         raise
 
 
-@bot.on_message(filters.command(["Ak47"]))    
+@bot.on_message(filters.command(["Sorry"]))    
 async def account_login(bot: Client, m: Message):    
     editable = await m.reply_text('**-═════━‧₊˚❀༉‧₊˚.━═════-\n📝 ꜱᴇɴᴅ ᴛxᴛ ꜰɪʟᴇ ꜰᴏʀ ᴅᴏᴡɴʟᴏᴀᴅ**\n-═════━‧₊˚❀༉‧₊˚.━═════-')
     input: Message = await bot.listen(editable.chat.id)
